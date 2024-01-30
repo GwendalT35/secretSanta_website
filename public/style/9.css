@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    
+}
+
+#en9 {
+    width: 50%;
+    height: auto;
+    position: fixed;
+    left: 445px;
+    background-color: #ffa;
+}
+
+#guess {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    background-color: #ddd;
+    text-align: center;
+    font-size: large;
+}

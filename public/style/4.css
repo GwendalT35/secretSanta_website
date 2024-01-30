@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+}
+.box {
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 30vh;
+}
+
+#story {
+    flex: 0 0 100%; /* 100% width for the <pre> */
+}
+
+.en1.box {
+    flex: 0 0 calc(33.333% - 20px); /* 33.333% width for each box, considering a 20px gap */
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Affiche les cartes sur 2 lignes et par 5 */
+    grid-gap: 20px;
+  }
+  
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    border: 3px solid #666;
+    background-color: #ddd;
+}
+
+header {
+    border: 3px solid #666;
+    background-color: #ddd;
+}
+  
+#submit {
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #666;
+}
+
+#submit:hover{
+    background-color: #ddd;
+}
+
+.stickyNote {
+    width:250px;
+    height:240px;
+    position:absolute;
+    background:#ffa;
+    overflow:hidden;
+    margin:30px auto;
+    padding:20px;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+        inset 0 -40px 40px rgba(0,0,0,0.2),
+        inset 0 25px 10px rgba(0,0,0,0.2),
+        0 5px 6px 5px rgba(0,0,0,0.2);
+    z-index: 2;
+    white-space: pre-wrap;
+    font-size: 80%;
+    bottom: 30px;
+}

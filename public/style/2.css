@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Pour éviter les débordements horizontaux */
+    background-color: black;
+    background-image: url("../assets/wall_dungeon.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 50px 10px wheat;
+}
+#guess {
+    padding: 10px; /* Ajoute une marge intérieure pour un meilleur aspect visuel */
+    width: 100%; /* Utilise la largeur complète du conteneur */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
+    text-align: center;
+    bottom: 0px;
+    position:absolute;
+}
+
+.stickyNote {
+    width:250px;
+    height:240px;
+    position:absolute;
+    background:#ffa;
+    overflow:hidden;
+    margin:30px auto;
+    padding:20px;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+        inset 0 -40px 40px rgba(0,0,0,0.2),
+        inset 0 25px 10px rgba(0,0,0,0.2),
+        0 5px 6px 5px rgba(0,0,0,0.2);
+    z-index: 2;
+    white-space: pre-wrap;
+    font-size: 80%;
+    bottom: 30px;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+body{
+  background-color: #000;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.box {
+  border: 3px solid #666;
+  background-color: #ddd;
+  border-radius: .5em;
+  padding: 20px; /* Increase the padding */
+  cursor: move;
+  height: 200px; /* Increase the height */
+}
+
+
+.boxAnswer {
+  border: 3px solid green;
+  background-color: rgba(0, 127, 0, 127);
+}
+
+.cardContainer {
+  position: absolute;
+  bottom: 370px; /* Adjust as needed */
+  left: -100px; /* Adjust as needed */
+  width: 100%;
+}
+
+.cards {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 180px;
+  height: 300px;
+  bottom: -165px;
+  background: #999;
+  border: 1px solid #000;
+  position: absolute;
+  transform-origin: bottom center;
+  transition: all .2s ease-in-out;
+}

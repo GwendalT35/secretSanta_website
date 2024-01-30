@@ -1,0 +1,116 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../assets/space.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#horloge {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hourHand-image,
+.minHand-image {
+    position: absolute;
+    top: 0%;
+    transform-origin: bottom;
+    z-index: 0;
+}
+
+.hourHand-image {
+    top: 25%;
+    height: 25%; /* Ajustez la hauteur de l'aiguille des heures selon vos préférences */
+    left: 49.1%;
+}
+
+.minHand-image {
+    height: 35%; /* Ajustez la hauteur de l'aiguille des minutes selon vos préférences */
+    left: 48.8%;
+    top: 15%;
+}
+
+.enigme {
+    /* Les deux propriétés ci-dessus permettent de centrer la div enigme1 par rapport à son coin supérieur gauche */
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+      /* background-color: red;
+      opacity: 0.5; */
+}
+
+#enigme1 {
+  position: absolute;
+  top: 19%; /* Ajustez selon votre besoin */
+  left: 55.5%; /* Ajustez selon votre besoin */
+}
+
+#enigme2 {
+  position: absolute;
+  top: 30%; /* Ajustez selon votre besoin */
+  left: 61%; /* Ajustez selon votre besoin */
+}
+
+#enigme3 {
+  position: absolute;
+  top: 45%; /* Ajustez selon votre besoin */
+  left: 63.5%; /* Ajustez selon votre besoin */
+}
+#enigme4 {
+  position: absolute;
+  top: 60%; /* Ajustez selon votre besoin */
+  left: 61%; /* Ajustez selon votre besoin */
+}
+#enigme5 {
+  position: absolute;
+  top: 71%; /* Ajustez selon votre besoin */
+  left: 55.5%; /* Ajustez selon votre besoin */
+}
+#enigme6 {
+  position: absolute;
+  top: 75%; /* Ajustez selon votre besoin */
+  left: 47.5%; /* Ajustez selon votre besoin */
+}
+#enigme7 {
+  position: absolute;
+  top: 71%; /* Ajustez selon votre besoin */
+  left: 39.5%; /* Ajustez selon votre besoin */
+}
+#enigme8 {
+  position: absolute;
+  top: 60%; /* Ajustez selon votre besoin */
+  left: 33.5%; /* Ajustez selon votre besoin */
+}
+#enigme9 {
+  position: absolute;
+  top: 45%; /* Ajustez selon votre besoin */
+  left: 31.5%; /* Ajustez selon votre besoin */
+}
+
+#enigme10 {
+  position: absolute;
+  top: 31%; /* Ajustez selon votre besoin */
+  left: 33.5%; /* Ajustez selon votre besoin */
+}
+#enigme11 {
+  position: absolute;
+  top: 19%; /* Ajustez selon votre besoin */
+  left: 40%; /* Ajustez selon votre besoin */
+}
+#enigme12 {
+  position: absolute;
+  top: 15%; /* Ajustez selon votre besoin */
+  left: 47.5%; /* Ajustez selon votre besoin */
+}
+

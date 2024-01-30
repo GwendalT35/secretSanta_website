@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#answer {
+    margin-top: auto; /* Place l'input en bas de l'écran */
+    padding: 10px; /* Ajoute une marge intérieure pour un meilleur aspect visuel */
+    width: 100%; /* Utilise la largeur complète du conteneur */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
+    text-align: center;
+}
+
+#back {
+    height: 50px;
+}

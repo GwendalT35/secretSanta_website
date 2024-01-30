@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+#clockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+#horloge {
+    max-width: 100%;
+    height: auto;
+    z-index: 0; /* Pour s'assurer que l'horloge est au-dessus des boutons */
+    border-radius: 50%;
+    background-color: white;
+}
+
+.btn {
+    position: absolute;
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: 100px; /* Ajustez la taille selon vos besoins */
+    background-color: #ccc; /* Couleur de fond pour les boutons */
+    border: 1px solid #000;
+    border-radius: 50% ; /* Pour rendre les boutons circulaires */
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+#answerContainer {
+    text-align: center;
+    margin-bottom: 20px; /* Espace entre l'horloge et la réponse/input */
+}
+
+#answer {
+    display: inline-block;
+    margin: 0; /* Pour réinitialiser les marges par défaut */
+    border: 1px solid white; /* Ajout de la bordure */
+    background-color: white;
+    padding: 10px; /* Ajout de la marge intérieure pour un meilleur aspect visuel */
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+#submit {
+  width: 100%;
+  height: 50px;
+  vertical-align: top;
+}
+
+
+#btn1 {
+    top: 16%; /* Ajustez selon votre besoin */
+    left: 55%; /* Ajustez selon votre besoin */
+  }
+  
+  #btn2 {
+    top: 28%; /* Ajustez selon votre besoin */
+    left: 61%; /* Ajustez selon votre besoin */
+  }
+  
+  #btn3 {
+    top: 45%; /* Ajustez selon votre besoin */
+    left: 63.5%; /* Ajustez selon votre besoin */
+  }
+  #btn4 {
+    top: 61%; /* Ajustez selon votre besoin */
+    left: 61%; /* Ajustez selon votre besoin */
+  }
+  #btn5 {
+    top: 73%; /* Ajustez selon votre besoin */
+    left: 55%; /* Ajustez selon votre besoin */
+  }
+  #btn6 {
+    top: 78%; /* Ajustez selon votre besoin */
+    left: 47.5%; /* Ajustez selon votre besoin */
+  }
+  #btn7 {
+    top: 73%; /* Ajustez selon votre besoin */
+    left: 39.5%; /* Ajustez selon votre besoin */
+  }
+  #btn8 {
+    top: 61%; /* Ajustez selon votre besoin */
+    left: 33.5%; /* Ajustez selon votre besoin */
+  }
+  #btn9 {
+    top: 44%; /* Ajustez selon votre besoin */
+    left: 31.5%; /* Ajustez selon votre besoin */
+  }
+  
+  #btn10 {
+    top: 29%; /* Ajustez selon votre besoin */
+    left: 33.6%; /* Ajustez selon votre besoin */
+  }
+  #btn11 {
+    top: 15%; /* Ajustez selon votre besoin */
+    left: 40%; /* Ajustez selon votre besoin */
+  }
+  #btn12 {
+    top: 11%; /* Ajustez selon votre besoin */
+    left: 47.5%; /* Ajustez selon votre besoin */
+  }
+
+  .stickyNote {
+    width:250px;
+    height:240px;
+    position:absolute;
+    background:#ffa;
+    overflow:hidden;
+    margin:30px auto;
+    padding:20px;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+        inset 0 -40px 40px rgba(0,0,0,0.2),
+        inset 0 25px 10px rgba(0,0,0,0.2),
+        0 5px 6px 5px rgba(0,0,0,0.2);
+    z-index: 2;
+    white-space: pre-wrap;
+    font-size: 80%;
+    bottom: 30px;
+
+}
